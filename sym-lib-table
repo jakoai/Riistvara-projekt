@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "airsoft_controller")(type "KiCad")(uri "${KIPRJMOD}/airsoft_controller.kicad_sym")(options "")(descr ""))
+)
