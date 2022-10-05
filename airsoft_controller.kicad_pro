@@ -324,6 +324,18 @@
     [
       "860145e7-2ac9-4a52-abb4-a72fc4d98335",
       "USP_PD"
+    ],
+    [
+      "7be0ab31-153d-4ac7-8d1b-c686dadc0fdf",
+      "IMU"
+    ],
+    [
+      "11553aee-ed63-4d72-86c3-0b7ce91fdb1d",
+      "NFC"
+    ],
+    [
+      "b95b2f37-adf8-4e97-8bac-7d1814180699",
+      "GPS"
     ]
   ],
   "text_variables": {}
