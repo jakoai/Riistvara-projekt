@@ -336,6 +336,14 @@
     [
       "b95b2f37-adf8-4e97-8bac-7d1814180699",
       "GPS"
+    ],
+    [
+      "24543f76-f3d4-4329-9d46-6e7f704c6c02",
+      "LoRa"
+    ],
+    [
+      "9e0720ac-5de8-4708-96e5-f526f34ffad1",
+      "Display"
     ]
   ],
   "text_variables": {}
