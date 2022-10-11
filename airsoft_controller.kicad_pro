@@ -322,8 +322,8 @@
       ""
     ],
     [
-      "860145e7-2ac9-4a52-abb4-a72fc4d98335",
-      "USP_PD"
+      "8ab84ef1-8252-469c-850a-9e4f14e4ddfd",
+      "Battery manager"
     ],
     [
       "7be0ab31-153d-4ac7-8d1b-c686dadc0fdf",
@@ -344,6 +344,18 @@
     [
       "9e0720ac-5de8-4708-96e5-f526f34ffad1",
       "Display"
+    ],
+    [
+      "dad78a3c-8763-4d20-b96b-942d6d484c24",
+      "USB-C power controller"
+    ],
+    [
+      "1b6885e8-6321-42c0-bca4-b4a7c870a10d",
+      "Battery protection"
+    ],
+    [
+      "a99c426c-6c05-408b-9295-01e8470a98af",
+      "LED indicators"
     ]
   ],
   "text_variables": {}
