@@ -1221,7 +1221,7 @@
   (no_connect (at 198.12 147.32) (uuid b1e669fe-a186-457b-81db-2be67b3624a7))
   (no_connect (at 189.23 29.21) (uuid cdbc2a41-4350-4de8-9585-39c48cf48dd8))
   (no_connect (at 149.86 175.26) (uuid d3fcbfdd-b369-499e-a687-e07950c3e940))
-  (no_connect (at 152.4 175.26) (uuid d3fcbfdd-b369-499e-a687-e07950c3e940))
+  (no_connect (at 152.4 175.26) (uuid d3fcbfdd-b369-499e-a687-e07950c3e941))
 
   (wire (pts (xy 120.65 19.05) (xy 120.65 20.32))
     (stroke (width 0) (type default) (color 0 0 0 0))
