@@ -409,7 +409,7 @@
       (property "Footprint" "" (id 2) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "" (id 3) (at 0 0 0)
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq29200.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1666015806508&ref_url=https%253A%252F%252Fwww.mouser.ee%252F" (id 3) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "BQ29209DRBR_0_0"
@@ -1218,7 +1218,7 @@
     (property "Footprint" "" (id 2) (at 168.91 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (id 3) (at 168.91 90.17 0)
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/bq29200.pdf?HQS=dis-mous-null-mousermode-dsf-pf-null-wwe&ts=1666015806508&ref_url=https%253A%252F%252Fwww.mouser.ee%252F" (id 3) (at 168.91 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f157cef8-cb21-4789-a627-2ab433a622e8))

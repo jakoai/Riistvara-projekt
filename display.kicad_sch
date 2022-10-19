@@ -370,7 +370,7 @@
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "E2266CS0C2_0_0"
-        (pin no_connect line (at -15.24 -13.97 0) (length 2.54) hide
+        (pin no_connect line (at -12.7 -8.89 0) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
@@ -410,7 +410,7 @@
           (name "VDDD" (effects (font (size 1.27 1.27))))
           (number "18" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at -15.24 -13.97 0) (length 2.54) hide
+        (pin no_connect line (at -12.7 -1.27 0) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "19" (effects (font (size 1.27 1.27))))
         )
@@ -442,7 +442,7 @@
           (name "RESE" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at -15.24 -13.97 0) (length 2.54) hide
+        (pin no_connect line (at -12.7 -13.97 0) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
@@ -450,11 +450,11 @@
           (name "VDHR" (effects (font (size 1.27 1.27))))
           (number "5" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at -15.24 -13.97 0) (length 2.54) hide
+        (pin no_connect line (at -12.7 8.89 0) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "6" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at -15.24 -13.97 0) (length 2.54) hide
+        (pin no_connect line (at 12.7 -13.97 180) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "7" (effects (font (size 1.27 1.27))))
         )

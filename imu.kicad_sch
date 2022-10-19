@@ -113,7 +113,7 @@
           (name "SCK_SCL" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 12.7 -5.08 180) (length 2.54) hide
+        (pin no_connect line (at 10.16 3.81 180) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "10" (effects (font (size 1.27 1.27))))
         )
@@ -133,7 +133,7 @@
           (name "DOUT_A6" (effects (font (size 1.27 1.27))))
           (number "3" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 12.7 -5.08 180) (length 2.54) hide
+        (pin no_connect line (at 10.16 -6.35 180) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "4" (effects (font (size 1.27 1.27))))
         )
@@ -149,7 +149,7 @@
           (name "VPP" (effects (font (size 1.27 1.27))))
           (number "7" (effects (font (size 1.27 1.27))))
         )
-        (pin no_connect line (at 12.7 -5.08 180) (length 2.54) hide
+        (pin no_connect line (at 10.16 -3.81 180) (length 2.54) hide
           (name "NC" (effects (font (size 1.27 1.27))))
           (number "8" (effects (font (size 1.27 1.27))))
         )
