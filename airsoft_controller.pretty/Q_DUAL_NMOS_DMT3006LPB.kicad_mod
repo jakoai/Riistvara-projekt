@@ -21,7 +21,7 @@
       (xy -2.4 1.8)
       (xy -2.4 1.1)
       (xy 2.4 1.1)
-    ) (layer "F.Cu") (width 0) (fill solid) (tstamp 72edebcd-4d37-4f59-8249-1be4990c4271))
+    ) (layer "F.Paste") (width 0) (fill solid) (tstamp 72edebcd-4d37-4f59-8249-1be4990c4271))
   (fp_line (start -1.05 -2.975) (end -1.5 -2.975) (layer "F.SilkS") (width 0.12) (tstamp 55d8fb2c-2aba-464e-8efe-c8d012be587a))
   (fp_line (start 0.225 2.975) (end -0.225 2.975) (layer "F.SilkS") (width 0.12) (tstamp 6e863b40-b14a-4435-9756-bd34e1f9cc56))
   (fp_line (start -2.35 -2.975) (end -2.35 -2.05) (layer "F.SilkS") (width 0.12) (tstamp 81612519-637c-41df-b117-ff900271a991))
