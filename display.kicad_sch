@@ -1106,7 +1106,7 @@
   (symbol (lib_id "Device:R") (at 177.8 76.2 90) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 9e285809-4614-43d2-936b-902fa9eabf46)
-    (property "Reference" "R52" (id 0) (at 177.8 78.74 90))
+    (property "Reference" "R51" (id 0) (at 177.8 78.74 90))
     (property "Value" "0.47R" (id 1) (at 177.8 81.28 90))
     (property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" (id 2) (at 177.8 77.978 90)
       (effects (font (size 1.27 1.27)) hide)

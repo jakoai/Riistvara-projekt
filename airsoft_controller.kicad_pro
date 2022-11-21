@@ -45,7 +45,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.19999999999999998
+          "min_clearance": 0.508
         }
       },
       "diff_pair_dimensions": [
@@ -486,6 +486,10 @@
     [
       "70712b41-0a4f-407d-b756-1dd7b8fa62c5",
       "USB Power paths"
+    ],
+    [
+      "c3d4f3ec-b76e-4963-8b7e-1eaf395a90ba",
+      "Mount holes"
     ]
   ],
   "text_variables": {}
