@@ -6062,52 +6062,52 @@
       (reference "D4") (unit 1) (value "D_Schottky") (footprint "airsoft_controller:D-US2H-2")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/ee08ba86-875b-4d19-8957-53ae5e3af81c"
-      (reference "D5") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D5") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/bf7a00b4-d2de-4f2c-98b5-99eabfbcf676"
-      (reference "D6") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D6") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/1d8dc22f-0239-4f4e-8558-8056be729203"
-      (reference "D7") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D7") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/5066f1cd-acd4-44b9-9566-1bfeee0732a6"
-      (reference "D8") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D8") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/c59b2b13-552b-4e22-ad8d-4e0bc415fcc4"
-      (reference "D9") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D9") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/9554cc10-85cd-4e6a-8b0b-fc9417026ef2"
-      (reference "D10") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D10") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/157ec6cb-b65c-4347-8147-c6c962fd0a30"
-      (reference "D11") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D11") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/a3b9b37f-c5ba-4090-a6ca-c60ed96e9605"
-      (reference "D12") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D12") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/10259a1c-e601-469a-89fa-aacb1544b592"
-      (reference "D13") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D13") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/9e32003b-6f2c-42a0-bc2b-a0723c251651"
-      (reference "D14") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D14") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/0f6d5ed1-2a14-485e-ba11-f624f3d8f777"
-      (reference "D15") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D15") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/cf9ace75-1f4a-411a-8f1a-6387faf324d1"
-      (reference "D16") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D16") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/d69be1d8-73e2-4c14-a35d-e9e15a8e574a"
-      (reference "D17") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D17") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/36d60b03-0110-45a2-9c78-55341b0889a2"
-      (reference "D18") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D18") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/f0d2d759-4487-4e89-aa3a-1825b4bd4b0b"
-      (reference "D19") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D19") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/a99c426c-6c05-408b-9295-01e8470a98af/845fd088-b1e6-4f27-aef6-fce8698d00cd"
-      (reference "D20") (unit 1) (value "WS2812B") (footprint "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
+      (reference "D20") (unit 1) (value "WS2812B") (footprint "airsoft_controller:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm")
     )
     (path "/8ab84ef1-8252-469c-850a-9e4f14e4ddfd/1b6885e8-6321-42c0-bca4-b4a7c870a10d/7d521d6e-1363-4bc4-a0a6-444a77d56041"
       (reference "F1") (unit 1) (value "Fuse") (footprint "airsoft_controller:fuse_clip_5x20-33mm")
@@ -6434,7 +6434,7 @@
       (reference "R65") (unit 1) (value "160R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/8ab84ef1-8252-469c-850a-9e4f14e4ddfd/1b6885e8-6321-42c0-bca4-b4a7c870a10d/05dc6f53-abee-4388-8636-6599e8e2bc0b"
-      (reference "R66") (unit 1) (value "100R") (footprint "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm")
+      (reference "R66") (unit 1) (value "100R 2W") (footprint "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm")
     )
     (path "/8ab84ef1-8252-469c-850a-9e4f14e4ddfd/1b6885e8-6321-42c0-bca4-b4a7c870a10d/c2f475a9-26b6-4ffc-bec4-dc97bbcea3bf"
       (reference "R67") (unit 1) (value "260R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
@@ -6443,7 +6443,7 @@
       (reference "R68") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
     )
     (path "/8ab84ef1-8252-469c-850a-9e4f14e4ddfd/1b6885e8-6321-42c0-bca4-b4a7c870a10d/f7275a96-75b5-4b23-b5e4-5dbf2ef83a3b"
-      (reference "R69") (unit 1) (value "100R") (footprint "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm")
+      (reference "R69") (unit 1) (value "100R 2W") (footprint "Resistor_THT:R_Box_L13.0mm_W4.0mm_P9.00mm")
     )
     (path "/8ab84ef1-8252-469c-850a-9e4f14e4ddfd/1b6885e8-6321-42c0-bca4-b4a7c870a10d/62b0f8c4-77d0-4a01-9e00-00cbeda82880"
       (reference "R70") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder")
