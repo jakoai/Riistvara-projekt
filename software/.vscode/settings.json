@@ -1,0 +1,21 @@
+{
+  "C_Cpp.intelliSenseEngine": "Tag Parser",
+  "idf.adapterTargetName": "esp32s3",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.flashType": "UART",
+  "idf.portWin": "COM4",
+  "files.associations": {
+    "led_strip.h": "c",
+    "chrono": "c",
+    "led_strip_interface.h": "c",
+    "led_strip_encoder.h": "c",
+    "rmt.h": "c",
+    "array": "c",
+    "string": "c",
+    "string_view": "c",
+    "tps65988.h": "c",
+    "*.inc": "cpp"
+  }
+}

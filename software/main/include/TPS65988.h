@@ -1,0 +1,178 @@
+#ifndef TPS65988_H
+#define TPS65988_H
+
+#include "esp_err.h"
+#include "stdint.h"
+
+#define TPS65988_DEVICE_ID_SYSTEM           0x20
+
+#define TPS65988_ADDR_VID                   0x00
+#define TPS65988_ADDR_DID                   0x01
+#define TPS65988_ADDR_PROTO_VER             0x02
+#define TPS65988_ADDR_MODE                  0x03
+#define TPS65988_ADDR_TYPE                  0x04
+#define TPS65988_ADDR_UID                   0x05
+#define TPS65988_ADDR_CUSTOMER_USE          0x06
+#define TPS65988_ADDR_CMD1                  0x08
+#define TPS65988_ADDR_DATA1                 0x09
+#define TPS65988_ADDR_VERSION               0x0F
+#define TPS65988_ADDR_CMD2                  0x10
+#define TPS65988_ADDR_DATA2                 0x11
+#define TPS65988_ADDR_INT_EVENT1            0x14
+#define TPS65988_ADDR_INT_EVENT2            0x15
+#define TPS65988_ADDR_INT_MASK1             0x16
+#define TPS65988_ADDR_INT_MASK2             0x17
+#define TPS65988_ADDR_INT_CLEAR1            0x18
+#define TPS65988_ADDR_INT_CLEAR2            0x19
+#define TPS65988_ADDR_STATUS_REG            0x1A
+#define TPS65988_ADDR_DISCOVERED_SVID_REG   0x21
+#define TPS65988_ADDR_POWER_PATH_STATUS_REG 0x26
+#define TPS65988_ADDR_GLOBAL_SYSTEM_CONF    0x27
+#define TPS65988_ADDR_PORT_CONF             0x28
+#define TPS65988_ADDR_PORT_CONTROL          0x29
+#define TPS65988_ADDR_BOOT_FLAGS_REG        0x2D
+#define TPS65988_ADDR_RX_SOURCE_CAP_REG     0x30
+#define TPS65988_ADDR_RX_SINK_CAP_REG       0x31
+#define TPS65988_ADDR_TX_SOURCE_CAP_REG     0x32
+#define TPS65988_ADDR_TX_SINK_CAP_REG       0x33
+#define TPS65988_ADDR_ACTIVE_CONTRACT_PDO   0x34
+#define TPS65988_ADDR_ACTIVE_CONTRACT_RDO   0x35
+#define TPS65988_ADDR_SINK_REQUEST_RDO      0x36
+#define TPS65988_ADDR_AUTO_NEGOTIATE_SINK   0x37
+#define TPS65988_ADDR_ALTER_MODE_ENTRY_SEQ  0x38
+#define TPS65988_ADDR_POWER_STATUS          0x3F
+#define TPS65988_ADDR_PD_STATUS             0x40
+#define TPS65988_ADDR_PD3_0_STATUS          0x41
+#define TPS65988_ADDR_PD3_0_CONF_REG        0x42
+#define TPS65988_ADDR_DELAY_CONF_REG        0x43
+#define TPS65988_ADDR_TX_INDENTITY          0x47
+#define TPS65988_ADDR_RX_IDENTITY_SOP       0x48
+#define TPS65988_ADDR_RX_IDENTITY_SOP_      0x49
+#define TPS65988_ADDR_USER_VID_CONF         0x4A
+#define TPS65988_ADDR_MIPI_VID_CONF         0x4B
+#define TPS65988_ADDR_RX_ATTENTION          0x4E
+#define TPS65988_ADDR_RX_VDM                0x4F
+#define TPS65988_ADDR_DATA_CONTROL          0x50
+#define TPS65988_ADDR_DP_SID_CONF           0x51
+#define TPS65988_ADDR_INTEL_VID_CONF        0x52
+#define TPS65988_ADDR_USER_VID_STATUS       0x57
+#define TPS65988_ADDR_DP_SID_STATUS         0x58
+#define TPS65988_ADDR_INTEL_VID_STATUS      0x59
+#define TPS65988_ADDR_GPIO_CONF             0x5C
+#define TPS65988_ADDR_RETIMER_DEBUG_MODE    0x5D
+#define TPS65988_ADDR_DATA_STATUS           0x5F
+#define TPS65988_ADDR_RX_USER_VID_ATTEN_VDM 0x60
+#define TPS65988_ADDR_RX_USER_VID_OTHER_VDM 0x61
+#define TPS65988_ADDR_BINARY_DATA_INDICES   0x62
+#define TPS65988_ADDR_MIPI_VID_STATUS       0x63
+#define TPS65988_ADDR_I2C_MASTER_CONF       0x64
+#define TPS65988_ADDR_TYPEC_STATE_REG       0x69
+#define TPS65988_ADDR_HW_CONTROL            0x6B
+#define TPS65988_ADDR_APP_CONF              0x6C
+#define TPS65988_ADDR_SLEEP_CONF_REG        0x70
+#define TPS65988_ADDR_RECIEVED_MIDB         0x71
+#define TPS65988_ADDR_GPIO_STATUS_REG       0x72
+#define TPS65988_ADDR_TRANSMIT_MIDB         0x73
+#define TPS65988_ADDR_RECIEVED_ADO          0x74
+#define TPS65988_ADDR_TRANSMIT_ADO          0x75
+#define TPS65988_ADDR_RECIEVED_SCEDB        0x76
+#define TPS65988_ADDR_TRANSMIT_SCEDB        0x77
+#define TPS65988_ADDR_RECIEVED_SDB          0x78
+#define TPS65988_ADDR_TRANSMIT_SDB          0x79
+#define TPS65988_ADDR_RECIEVED_BSDO         0x7A
+#define TPS65988_ADDR_TRANSMIT_BSDO         0x7B
+#define TPS65988_ADDR_RECIEVED_BCDB         0x7C
+#define TPS65988_ADDR_TRANSMIT_BCDB         0x7D
+#define TPS65988_ADDR_RECIEVED_MIDB_        0x7E
+#define TPS65988_ADDR_TRANSMIT_MIDB_        0x7F           
+
+enum TPS65988_POWER_PATH {
+    TPS65988_POWER_PATH_INT1, //PP1, PP_HV1
+    TPS65988_POWER_PATH_INT2, //PP2, PP_HV2
+    TPS65988_POWER_PATH_EXT1, //PP3, PP_EXT1
+    TPS65988_POWER_PATH_EXT2, //PP4, PP_EXT2
+};
+
+typedef struct __attribute__ ((__packed__)) {
+    uint8_t     comms_timeouts;
+    uint8_t     policies; 
+    uint16_t    reserved1; //write always 0
+    uint16_t    pp_over_current_clamp_timeout;
+    uint8_t     power_path_map;
+    uint8_t     reserved2; //write always 0
+    uint32_t    pp_config;
+    uint16_t    pp_cable_config;
+
+} TPS65988_GLOBAL_SYSTEM_CONF_T;
+
+esp_err_t tps65988_set_spi_read_only(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, uint8_t state); //set if controller is allowed to attempt SPI flash updates
+
+enum TPS65988_I2C_TIMEOUT {
+    TPS65988_I2C_TIMEOUT_25MS,
+    TPS65988_I2C_TIMEOUT_50MS, //default
+    TPS65988_I2C_TIMEOUT_75MS,
+    TPS65988_I2C_TIMEOUT_100MS,
+    TPS65988_I2C_TIMEOUT_125MS,
+    TPS65988_I2C_TIMEOUT_150MS,
+    TPS65988_I2C_TIMEOUT_175MS,
+    TPS65988_I2C_TIMEOUT_1S,
+};
+esp_err_t tps65988_set_i2c_timeout(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_I2C_TIMEOUT timeout); //resets the I2C slave if timeout is exceeded
+
+enum TPS65988_MULTIPORT_SINK_NON_OVERLAP_TIME {
+    TPS65988_MULTIPORT_SINK_NON_OVERLAP_TIME_1MS,
+    TPS65988_MULTIPORT_SINK_NON_OVERLAP_TIME_5MS,
+    TPS65988_MULTIPORT_SINK_NON_OVERLAP_TIME_10MS,
+    TPS65988_MULTIPORT_SINK_NON_OVERLAP_TIME_15MS,
+};
+esp_err_t tps65988_set_multiport_sink_non_overlap_time(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_MULTIPORT_SINK_NON_OVERLAP_TIME time); //amount of time when a new sink input path closes and old one opens
+
+enum TPS65988_MULTIPORT_POLICY {
+    TPS65988_MULTIPORT_POLICY_SOURCE    = (1<<7),
+    TPS65988_MULTIPORT_POLICY_DR        = (1<<6),
+    TPS65988_MULTIPORT_POLICY_AM        = (3<<2),
+    TPS65988_MULTIPORT_POLICY_SINK      = (3<<0),
+};
+esp_err_t tps65988_set_multiport_policy(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_MULTIPORT_POLICY policy, uint8_t value);
+
+enum TPS65988_TBT_CONTROLLER_TYPE {
+    TPS65988_TBT_CONTROLLER_TYPE_DEFAULT,
+    TPS65988_TBT_CONTROLLER_TYPE_AR,
+    TPS65988_TBT_CONTROLLER_TYPE_TR,
+    TPS65988_TBT_CONTROLLER_TYPE_ICL,
+};
+
+esp_err_t tps65988_set_tbt_controller_type(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_TBT_CONTROLLER_TYPE type);
+
+enum TPS65988_I2C_MASTER {
+    TPS65988_I2C_MASTER_DISABLED,
+    TPS65988_I2C_MASTER_PORT1,
+    TPS65988_I2C_MASTER_PORT3,
+    TPS65988_I2C_MASTER_PORT1_PORT3,
+};
+
+esp_err_t tps65988_set_i2c_master(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_I2C_MASTER enable_ports);
+
+esp_err_t tps65988_set_pp_int_occ_timeout(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_POWER_PATH pp, uint8_t en, uint8_t timeout);
+
+enum TPS65988_POWER_PATH_VBUS_MAP {
+    TPS65988_POWER_PATH_MAP_VBUS1,
+    TPS65988_POWER_PATH_MAP_VBUS2,
+};
+
+esp_err_t tps65988_set_pp_vbus_map(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_POWER_PATH pp, enum TPS65988_POWER_PATH_VBUS_MAP vbus);
+
+enum TPS65988_PP_SW_CONF {
+    TPS65988_PP_SW_CONF_DISABLED,
+    TPS65988_PP_SW_CONF_SOURCE,
+    TPS65988_PP_SW_CONF_SINK,
+    TPS65988_PP_SW_CONF_SINK_WAIT_SRDY,
+    TPS65988_PP_SW_CONF_SOURCE_SINK,
+    TPS65988_PP_SW_CONF_SOURCE_SINK_WAIT_SRDY,
+};
+
+esp_err_t tps65988_set_pp_sw_conf(TPS65988_GLOBAL_SYSTEM_CONF_T *conf, enum TPS65988_POWER_PATH pp, enum TPS65988_PP_SW_CONF pp_conf);
+
+esp_err_t tps65988_i2c_write(uint8_t reg, uint8_t *data, size_t len);
+esp_err_t tps65988_i2c_read(uint8_t reg, uint8_t *buf, size_t buf_len, uint8_t *reg_len);
+#endif
